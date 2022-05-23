@@ -1,0 +1,92 @@
+[{
+  "author": "Gustave Flaubert",
+  "imageLink": "../../assets/img/madameBovary_gustaveFlaubert.jpg",
+  "title": "Madame Bovary",
+  "price": 12,
+  "description": "Emma Bovary is beautiful and bored, trapped in her marriage to a mediocre doctor and stifled by the banality of provincial life. An ardent reader of sentimental novels, she longs for passion and seeks escape in fantasies of high romance, in voracious spending and, eventually, in adultery. But even her affairs bring her disappointment and the consequences are devastating. Flaubert's erotically charged and psychologically acute portrayal of Emma Bovary caused a moral outcry on its publication in 1857. It was deemed so lifelike that many women claimed they were the model for his heroine; but Flaubert insisted: 'Madame Bovary, c'est moi'."
+},
+  {
+    "author": "Voltaire",
+    "imageLink": "../../assets/img/candideOrTheOptimist_voltaire.jpg",
+    "title": "Candide, or the Optimist",
+    "price": 15,
+    "description": "In Candide, Voltaire threw down an audacious challenge to the philosophical views of the Enlightenment to create one of the most glorious satires of the eighteenth century. His eponymous hero is an innocent young man whose tutor, Pangloss, has instilled in him the belief that 'all is for the best'. But when his love for the Baron's rosy-cheeked daughter is discovered, Candide is cast out to make his own fortune. As he and his various companions roam over the world, an outrageous series of disasters - earthquakes, syphilis, the Inquisition - sorely test the young hero's optimism, holding a mirror up to all fanatics, zealots and moral reformers of humankind. "
+  },
+  {
+    "author": "Albert Camus",
+    "imageLink": "../../assets/img/theStranger_albertCamus(1).webp",
+    "title": "The Stranger",
+    "price": 9,
+    "description": "In The Stranger, his classic existentialist novel, Camus explores the alienation of an individual who refuses to conform to social norms. Meursault, his anti-hero, will not lie. When his mother dies, he refuses to show his emotions simply to satisfy the expectations of others. And when he commits a random act of violence on a sun-drenched beach near Algiers, his lack of remorse compounds his guilt in the eyes of society and the law. Yet he is as much a victim as a criminal."
+  },
+  {
+    "author": "Pierre Choderlos de Laclos",
+    "imageLink": "../../assets/img/dangerousLiaisons_pierreChoderlosDeLaclos.jpg",
+    "title": "Dangerous Liaisons",
+    "price": 12,
+    "description": "Published in 1782, just years before the French Revolution, Les Liaisons Dangereuses is a disturbing and ultimately damning portrayal of a decadent society. At its centre are two aristocrats, former lovers, who embark on a sophisticated game of seduction and manipulation to bring amusement to their jaded existences. While the Marquise de Merteuil challenges the Vicomte de Valmont to seduce an innocent convent girl, the Vicomte is also occupied with the conquest of a virtuous married woman. But as their intrigues become more duplicitous and they find their human pawns responding in ways they could not have predicted, the consequences prove to be more serious, and deadly, than Merteuil and Valmont could have guessed."
+  },
+  {
+    "author": "Simone de Beauvoir",
+    "imageLink": "../../assets/img/theSecondSex_simoneDeBeauvoir.jpg",
+    "title": "The Second Sex",
+    "price": 21,
+    "description": "When this book was first published in 1949 it was to outrage and scandal. Never before had the case for female liberty been so forcefully and successfully argued. De Beauvoir’s belief that ‘One is not born, but rather becomes, woman’ switched on light bulbs in the heads of a generation of women and began a fight for greater equality and economic independence. These pages contain the key passages of the book that changed perceptions of women forever."
+  },
+  {
+    "author": "Charles Beaudelaire",
+    "imageLink": "../../assets/img/theFlowersOfEvil_charlesBeaudelaire.jpg",
+    "title": "The Flowers of Evil",
+    "price": 19,
+    "description": "Known to his contemporaries primarily as an art critic, but ambitious to secure a more lasting literary legacy, Charles Baudelaire, a Parisian bohemian, spent much of the 1840s composing gritty, often perverse, poems that expressed his disgust with the banality of modern city life. First published in 1857, the book that collected these poems together, Les Fleurs du mal, was an instant sensation―earning Baudelaire plaudits and, simultaneously, disrepute. Subsequent editions expanded on the original, including new poems that have since been recognized as Baudelaire’s masterpieces, producing a body of work that stands as the most consequential, controversial, and influential book of poetry from the nineteenth century."
+  },
+  {
+    "author": "Stendhal",
+    "imageLink": "../../assets/img/theRedAndTheBlack_stendhal.webp",
+    "title": "The Red and the Black",
+    "price": 14,
+    "description": "Handsome, ambitious Julien Sorel is determined to rise above his humble provincial origins. Soon realizing that success can only be achieved by adopting the subtle code of hypocrisy by which society operates, he begins to achieve advancement through deceit and self-interest. His triumphant career takes him into the heart of glamorous Parisian society, along the way conquering the gentle, married Madame de Rênal, and the haughty Mathilde. But then Julien commits an unexpected, devastating crime - and brings about his own downfall. The Red and the Black is a lively, satirical portrayal of French society after Waterloo, riddled with corruption, greed and ennui, and Julien - the cold exploiter whose Machiavellian campaign is undercut by his own emotions - is one of the most intriguing characters in European literature."
+  },
+  {
+    "author": "Honoré de Balzac",
+    "imageLink": "../../assets/img/oldGoriot_honoreDeBalzac.jpg",
+    "title": "Old Goriot",
+    "price": 14,
+    "description": "Monsieur Goriot is one of a disparate group of lodgers at Mademe Vauquer's dingy Parisian boarding house. At first his wealth inspires respect, but as his circumstances are mysteriously reduced he becomes shunned by those around him, and soon his only remaining visitors are his two beautifully dressed daughters. Goriot's fate is intertwined with two other fellow boarders: the young social climber Eugene Rastignac, who sees a way to gain the acceptance and wealth he craves, and the enigmatic figure of Vautrin, who is hiding darker secrets than anyone. Weaving a compelling and panoramic story of love, money, self-sacrifice, corruption, greed and ambition, Old Goriot is Balzac's acknowledged masterpiece. A key novel in his Comédie Humaine series, it is a vividly realized portrait of bourgeois Parisian society in the years following the French Revolution."
+  },
+  {
+    "author": "Emile Zola",
+    "imageLink": "../../assets/img/ladiesDelight_emileZola.jpg",
+    "title": "Ladies' Delight",
+    "price": 11,
+    "description": "The Ladies' Delight is the glittering Paris department store run by Octave Mouret. He has used charm and drive to become director of this mighty emporium, unscrupulously exploiting his young female staff and seducing his lady customers with luxurious displays of shimmering silks, satins, velvets and lace. Then Denise Baudu, a naïve provincial girl, becomes an assistant at the store - and Mouret discovers that he in turn can also be enchanted. With its greedy customers, gossiping staff and vibrant sense of theatre, The Ladies' Delight (Au Bonheur des Dames in the original French) is one of the most richly exciting novels in Zola's Les Rougon-Macquart cycle."
+  },
+  {
+    "author": "Molière",
+    "imageLink": "../../assets/img/theMisanthrope_moliere.jpg",
+    "title": "The Misanthrope",
+    "price": 25,
+    "description": "Molière understood profoundly what makes us noble, pathetic, outrageous and funny, and in his splendid comedies satirized human folly to perfection. One of the best of his plays — and one of the greatest of all comedies — is The Misanthrope, first performed in 1666, when the King of France himself had assumed patronage of Molière's company, and the actor/playwright was at the height of his career. Spotlighting the absurdities of social and literary pretension, The Misanthrope shows us a man who is quick to criticize the hypocrisies, inconsistencies and faults of others, yet remains blind to his own. As \"the misanthrope\" grows more and more irritable with others, the play becomes more and more entertaining, even as a happy ending for the hero seems less and less likely."
+  },
+  {
+    "author": "Marcel Proust",
+    "imageLink": "../../assets/img/inSearchOfLostTime_marcelProust.webp",
+    "title": "In Search of Lost Time: Vol. 1",
+    "price": 18,
+    "description": "The Way by Swann's is one of the great novels of childhood, depicting the impressions of a sensitive boy of his family and neighbours, brought dazzlingly back to life by the famous taste of a madeleine. It contains the separate short novel, A Love of Swann's, a study of sexual jealousy that forms a crucial part of the vast, unfolding structure of In Search of Lost Time. This book established Proust as one of the greatest voices of the modern age - satirical, sceptical, confiding and endlessly varied in his responses to the human condition. Marcel Proust (1871-1922) is generally viewed as the greatest French novelist and perhaps the greatest European novelist of the 20th century. He lived much of his later life as a reclusive semi-invalid in a sound-proofed flat in Paris, giving himself over entirely to writing his masterpiece In Search of Lost Time (À la recherche du temps perdu)."
+  },
+  {
+    "author": "George Sand",
+    "imageLink": "../../assets/img/indiana_georgeSand.jpg",
+    "title": "Indiana",
+    "price": 9,
+    "description": "Indiana (1831) is an absorbing and vivid romantic novel, set partly in provincial France, partly in Paris, and partly on a tropical island. It tells the story of a beautiful and innocent young woman, married at sixteen to a much older man. She falls passionately in love with a handsome, frivolous neighbour but discovers too late that his idea of love is quite different from her own. It is only after a series of painful experiences that she comes to appreciate the silent devotion of her loyal and protective cousin. "
+  },
+  {
+    "author": "Victor Hugo",
+    "imageLink": "../../assets/img/lesMiserables_victorHugo.jpg",
+    "title": "Les Misérables",
+    "price": 28,
+    "description": "Victor Hugo's tale of injustice, heroism and love follows the fortunes of Jean Valjean, an escaped convict determined to put his criminal past behind him. But his attempts to become a respected member of the community are constantly put under threat: by his own conscience, and by the relentless investigations of the dogged policeman Javert. It is not simply for himself that Valjean must stay free, however, for he has sworn to protect the baby daughter of Fantine, driven to prostitution by poverty."
+  }
+]
