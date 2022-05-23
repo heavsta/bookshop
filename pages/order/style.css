@@ -11,6 +11,10 @@ img {
     max-height: 100px;
 }
 
+#summary {
+    text-align: center;
+}
+
 #order {
     text-align: center;
 }
