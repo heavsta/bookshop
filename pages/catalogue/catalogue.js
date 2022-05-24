@@ -67,6 +67,9 @@ function createBookItem(book, id, catalogue) {
     closeBtn.innerHTML = '&times;';
     closeBtn.addEventListener('click', e => e.target.parentElement.parentElement.classList.remove('active'));
     modalContent.appendChild(closeBtn);
+    const entitling = document.createElement('h3');
+    entitling.innerText = `${book.title} - ${book.author}`;
+    modalContent.appendChild(entitling);
     const description = document.createElement('p');
     description.innerText = book.description;
     description.classList.add('description');
