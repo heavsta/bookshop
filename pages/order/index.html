@@ -18,57 +18,59 @@
             <div id="order-list"></div>
             <div id="total"><h3></h3></div>
             <form>
-                <div>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" required>
-                        <small></small>
+                <div class="inputs">
+                    <div class="inputs-box">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Surname:</label>
+                            <input type="text" name="surname" id="surname" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery">Delivery date:</label>
+                            <input type="date" name="delivery" id="delivery" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group">
+                            <p>Choose up to 2 gifts!</p>
+                            <input type="checkbox" name="wrap" id="wrap">
+                            <label for="wrap">Pack as Gift</label><br>
+                            <input type="checkbox" name="postcard" id="postcard">
+                            <label for="postcard">Add a postcard</label><br>
+                            <input type="checkbox" name="discount" id="discount">
+                            <label for="discount">Provide 2% discount for next purchase</label><br>
+                            <input type="checkbox" name="pen" id="pen">
+                            <label for="pen">Receive a branded pen or pencil</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="surname">Surname:</label>
-                        <input type="text" name="surname" id="surname" required>
-                        <small></small>
+                    <div class="inputs-box">
+                        <div class="form-group">
+                            <label for="street">Street:</label>
+                            <input type="text" name="street" id="street" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="house">House number:</label>
+                            <input type="text" name="house" id="house" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="flat">Flat number:</label>
+                            <input type="text" name="flat" id="flat" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group">
+                            <p>Payment type:</p>
+                            <input type="radio" name="payment" id="card" value="card" required>
+                            <label for="card">Card</label><br>
+                            <input type="radio" name="payment" id="cash" value="cash">
+                            <label for="cash">Cash</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="delivery">Delivery date:</label>
-                        <input type="date" name="delivery" id="delivery" required>
-                        <small></small>
-                    </div>
-                </div>
-                <div>
-                    <div class="form-group">
-                        <label for="street">Street:</label>
-                        <input type="text" name="street" id="street" required>
-                        <small></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="house">House number:</label>
-                        <input type="text" name="house" id="house" required>
-                        <small></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="flat">Flat number:</label>
-                        <input type="text" name="flat" id="flat" required>
-                        <small></small>
-                    </div>
-                    <div class="form-group">
-                        <p>Payment type:</p>
-                        <input type="radio" name="payment" id="card" value="card" required>
-                        <label for="card">Card</label>
-                        <input type="radio" name="payment" id="cash" value="cash">
-                        <label for="cash">Cash</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <p>Choose up to 2 gifts!</p>
-                    <input type="checkbox" name="wrap" id="wrap">
-                    <label for="wrap">Pack as Gift</label>
-                    <input type="checkbox" name="postcard" id="postcard">
-                    <label for="postcard">Add a postcard</label>
-                    <input type="checkbox" name="discount" id="discount">
-                    <label for="discount">Provide 2% discount for next purchase</label>
-                    <input type="checkbox" name="pen" id="pen">
-                    <label for="pen">Receive a branded pen or pencil</label>
                 </div>
                 <input type="submit" value="Order" disabled>
             </form>

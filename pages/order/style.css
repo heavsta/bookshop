@@ -42,12 +42,24 @@ form {
     border: 2px solid #000;
     margin: 40px auto;
     max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+form p {
+    margin-bottom: 0.5rem;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs-box {
+    max-width: 420px;
 }
 
 .form-group {
     margin: 20px;
+    text-align: left;
 }
 
 small {
