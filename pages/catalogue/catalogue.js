@@ -139,10 +139,10 @@ function updateCartUI() {
         closeBtn.addEventListener('click', removeFromCart);
         const itemTitle = document.createElement('span');
         itemTitle.classList.add('item-title');
-        itemTitle.innerText = `${book.title} - `;
+        itemTitle.innerText = book.title;
         const itemAuthor = document.createElement('span');
         itemAuthor.classList.add('item-author');
-        itemAuthor.innerText = book.author;
+        itemAuthor.innerText = ` - ${book.author}`;
         const itemPrice = document.createElement('span');
         itemPrice.classList.add('item-price');
         itemPrice.innerText = ` ${book.price}€`;

@@ -66,11 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Preventing choosing past date
     const delivery = document.getElementById('delivery');
-    let today = new Date().toISOString().split('T')[0];
-    delivery.setAttribute('min', today);
+    let tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate()+1);
+    tomorrow = tomorrow.toISOString().split('T')[0];
+    console.log(tomorrow);
+    delivery.setAttribute('min', tomorrow);
     // In case min attr not working
     delivery.addEventListener('change', e => {
-        e.target.value < today
+        e.target.value < tomorrow
             ? delivery.classList.add('invalid')
             : delivery.classList.remove('invalid');   
     });
@@ -112,7 +115,7 @@ function checkFormValidity() {
         street.match(/^[a-zA-Z0-9.-\s]{5,}$/) &&
         house.match(/^[1-9]+[0-9]*$/) &&
         flat.match(/^[1-9]+[0-9-]*$/) &&
-        delivery >= today &&
+        delivery > today &&
         paymentMethod !== null
     ) {
         return true;
