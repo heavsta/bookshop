@@ -75,3 +75,9 @@ input[type=submit] {
     margin: 10px auto;
 }
 
+#shortcut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
