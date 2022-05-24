@@ -11,8 +11,9 @@ h1 {
 aside {
     position: fixed;
     right: 10px;
-    height: 80vh;
+    height: 92vh;
     width: 20%;
+    overflow-y: scroll;
 }
 
 #catalogue {

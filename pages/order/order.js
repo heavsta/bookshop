@@ -58,6 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e => checkInputValidity(e.target, /^[1-9]+[0-9]*$/, 'Positive numbers only')
     );
 
+    const flat = document.getElementById('flat');
+    flat.addEventListener(
+        'focusout',
+        e => checkInputValidity(e.target, /^[1-9]+[0-9-]*$/, 'Positive numbers only - dash not allowed as 1st char')
+    );
+
     // Preventing choosing past date
     const delivery = document.getElementById('delivery');
     let today = new Date().toISOString().split('T')[0];
@@ -95,6 +101,7 @@ function checkFormValidity() {
     const surname = document.getElementById('surname').value;
     const street = document.getElementById('street').value;
     const house = document.getElementById('house').value;
+    const flat = document.getElementById('flat').value;
     const delivery = document.getElementById('delivery').value;
     let today = new Date().toISOString().split('T')[0];
     const paymentMethod = document.querySelector('input[name="payment"]:checked');
@@ -104,6 +111,7 @@ function checkFormValidity() {
         surname.match(/^[A-Za-z]{5,}$/) &&
         street.match(/^[a-zA-Z0-9.-\s]{5,}$/) &&
         house.match(/^[1-9]+[0-9]*$/) &&
+        flat.match(/^[1-9]+[0-9-]*$/) &&
         delivery >= today &&
         paymentMethod !== null
     ) {
@@ -133,24 +141,23 @@ function submitForm(e) {
     const surname = document.getElementById('surname').value;
     const street = document.getElementById('street').value;
     const house = document.getElementById('house').value;
+    const flat = document.getElementById('flat').value;
     const payment = document.querySelector('input[name="payment"]:checked').value;
     const gifts = document.querySelectorAll('input[type="checkbox"]:checked');
-    let gift1 = gifts[0].name;
-    let gift2 = gifts[1].name;
 
     let output = `
     <h2>Order Confirmed!</h2>
-    <p>The delivery address is: ${street}, house n°${house}</p>
+    <p>Delivery address: ${street}, house n°${house}, flat n°${flat}</p>
     <p>Recipient: ${name} ${surname}<p>
     <p>Payment method: ${payment}<p>
     `;
 
-    if (gift1 !== undefined && gift2 !== undefined) {
-        output += `<p>Gifts: ${gift1} and ${gift2}!</p>
+    if (gifts[0] && gifts[1]) {
+        output += `<p>Gifts: ${gifts[0].name} and ${gifts[1].name}!</p>
         <p>Thank you for your Order!</p>
         `;
-    } else if (gift1 !== undefined && gift2 === undefined) {
-        output += `<p>Gifts: ${gift1}!</p>
+    } else if (gifts[0]) {
+        output += `<p>Gifts: ${gifts[0].name}!</p>
         <p>Thank you for your Order!</p>
         `;
     } else {
