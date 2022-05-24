@@ -2,8 +2,9 @@ let cart = [];
 let total = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
+    const fragment = document.createDocumentFragment();
 
-    const main = document.querySelector('main');
+    const main = document.createElement('main');
     const body = document.querySelector('body');
     body.classList.add('container');
     
@@ -25,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartItems = document.createElement('div');
     cartItems.setAttribute('id', 'cart-items');
     aside.appendChild(cartItems);
-    body.appendChild(aside);
 
     fetch('../../books.json') //path to the file with json data
         .then(response => {
@@ -36,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 createBookItem(books[i], i, catalogue);
             }
         });
+
+    fragment.appendChild(main);
+    fragment.appendChild(aside);
+    body.appendChild(fragment);
 });
 
 function createBookItem(book, id, catalogue) {
