@@ -1,5 +1,6 @@
 let cart = [];
 let total = 0;
+let selectedId;
 
 document.addEventListener('DOMContentLoaded', () => {
     const fragment = document.createDocumentFragment();
@@ -20,6 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const aside = document.createElement('aside');
     aside.setAttribute('id', 'cart');
+    aside.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        aside.style.borderColor = 'grey';
+    });
+    aside.addEventListener('dragleave', () => {
+        aside.style.borderColor = 'white';
+    });
+    aside.addEventListener('drop', (e) => {
+        e.preventDefault();
+        toggleAddRmvBtn(selectedId);
+        createCartItem(selectedId);
+        aside.style.borderColor = 'white';
+    })
     const asideHeading = document.createElement('h2');
     asideHeading.innerText = `Cart (${total}€)`;
     aside.appendChild(asideHeading);
@@ -54,6 +68,13 @@ function createBookItem(book, id, catalogue) {
     showMoreBtn.innerText = 'Show more';
     showMoreBtn.classList.add('btn');
     showMoreBtn.addEventListener('click', toggleModal);
+    const img = document.createElement('img');
+    img.src = book.imageLink;
+    img.alt = book.title;
+    img.draggable = true;
+    img.addEventListener('dragstart', () => {
+        selectedId = img.parentElement.id;
+    });
 
     // Book Modal
     const modal =  document.createElement('div');
@@ -78,9 +99,6 @@ function createBookItem(book, id, catalogue) {
     addBtn.innerText = 'Add';
     addBtn.classList.add('btn');
     addBtn.addEventListener('click', modifyCart);
-    const img = document.createElement('img');
-    img.src = book.imageLink;
-    img.alt = book.title;
 
     // Create BookItem and append elements
     let bookItem = document.createElement('div');
@@ -207,4 +225,14 @@ function confirmOrder() {
 
     // Move to order form
     location.href = '../order/index.html';
+}
+
+function toggleAddRmvBtn(id) {
+    const bookItems = [...document.querySelectorAll('.book-item')];
+    bookItems.forEach(bookItem => {
+        if (bookItem.id === id) {
+            const addRmvBtn = bookItem.lastElementChild;
+            addRmvBtn.innerText === 'Add' ? addRmvBtn.innerText = 'Remove' : addRmvBtn.innerText = 'Add';
+        }
+    });
 }
